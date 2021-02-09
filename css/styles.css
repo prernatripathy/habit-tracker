@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body{
+  background-color: #F0F4FF;
+  font-family: Montserrat, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.project-title {
+  background-color: #4E596F;
+  font-family: 'Catamaran', Helvetica, sans-serif;
+  width : 70%;
+  /* height: 10vh; */
+  margin:auto;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-size: 2em;
+  /* position: fixed; */
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+h1 {
+  /* font-size: 3em; */
+  font-weight: bolder;
+  margin: auto;
+}
+
+h2{
+  color:white;
+}
+
+.table {
+  background-color:#4E596F;
+  /* #ED4360; */
+  width:95%;
+  height: auto;
+  margin:auto;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+
+}
+.new-title {
+  background-color: #14213d;
+  /* align: center; */
+  margin:auto;
+  width : 100%;
+  border-radius: 15px;
+}
+
+.table-values{
+  display: flex;
+
+}
+
+.aside{
+  float: left;
+  background-color: #121212;
+  color:white;
+  width: 20%;
+  padding-top: 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  border-radius: 15px;
+  margin-right: .5em;
+}
+
+.aside span{
+  padding-left: 25px;
+  padding-top: 7px;
+  font-size: .8em;
+  text-align: right;
+  font-weight: bold;
+}
+
+.fas{
+  padding: 7px;
+}
+
+.table-data {
+  margin: inherit;
+  width: 80%;
+  background-color: #dee2e6;
+  border-radius: 15px;
+}
+
+
+
+
+.graph{
+  background-color: white;
+  height: 300px;
+  width: 95%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  display: flex;
+
+}
+
+.graph-button-div{
+  width: 30%;
+
+}
+
+.graph-button{
+
+background-color: #ED4360;
+color:white;
+margin-left: 50%;
+margin-top: 35%;
+padding:20px;
+font-weight: bold;
+border: 0 solid;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.graph-button:hover{
+  background-color: black;
+}
+
+
+
+
+.calc-values{
+  width: 70%;
+}
+
+#piechart{
+
+  width: 500px;
+  height: 300px;
+
+  margin: auto;
+  padding-left: 30px;
+}
+
+
+
+/* check this */
+input[type="checkbox"]{
+
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 8px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+input[type="checkbox"]:active, input[type="checkbox"]:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type="checkbox"]:checked {
+	background-color: #ED4360;
+	border: 1px dotted white;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #ED4360;
+}
+
+input[type="checkbox"]:checked:after {
+	content: '\2714';
+	font-size: 12px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: white;
+}
+
+
+@media (max-width:850px){
+
+  .graph{
+    height: 600px;
+    display:grid;
+    grid-template-areas:
+    "button"
+    "graph";
+  }
+  .graph-button-div{
+    grid-area:"button";
+    margin:auto;
+  }
+  .graph-button{
+    margin: auto;
+  }
+
+  .calc-values{
+    grid-area:"graph";
+    margin: auto;
+  }
+
+  rect{
+
+    width: 50%
+    height:auto;
+  }
+
+  .fas{
+    display: none;
+    visibility: hidden;
+  }
+
+}
